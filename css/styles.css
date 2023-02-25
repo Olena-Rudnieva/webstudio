@@ -142,7 +142,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  /* margin-bottom: 8px; */
+  margin-bottom: 8px;
 }
 
 .description {
@@ -528,9 +528,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 
-
-
-
 /* .hero-positioning {
   text-align: center;
 } */
@@ -733,12 +730,12 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 /* =========================== Features ==================== */
 
-/* .features {
-  padding-top: 120px;
-  padding-bottom: 36px;
-} */
+.features {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
 
-/* .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -750,7 +747,25 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} */
+}
+
+@media screen and (max-width: 767px) {
+  .subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;   
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;           
+    color: var(--logo-text-color-theme-light);
+  }
+
+  .mobile-description {
+    margin-bottom: 72px;
+  }
+}
 
 /* .features-list-flex {
   display: flex;
