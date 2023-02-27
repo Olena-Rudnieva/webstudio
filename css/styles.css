@@ -992,8 +992,16 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 .customers-list-icon {
   fill: currentColor;
+  width: 110px;
+  height: 56px;
 }
 
+@media screen and (min-width: 768px) {
+  .customers-list {
+    column-gap: 24px;
+  }
+  
+}
 /* =========================== /Customers ================== */
 
 /* ============================= Footer ==================== */
