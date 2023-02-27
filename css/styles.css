@@ -860,14 +860,34 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 /* =============================== Team ==================== */
 
+.team {
+  padding-top: 96px;
+  padding-bottom: 128px;
+  background-color: var(--third-bg-color);
+}
+
+.team-list {
+  text-align: center;
+}
+
+.team-list-item {
+  
+  background-color: var(--primary-bg-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  margin-bottom: 72px;  
+}
+
+.team-member {
+  padding: 32px 16px;
+}
+
 /* .team {
   padding-top: 120px;
   padding-bottom: 120px;
 } */
 
-/* .bg {
-  background-color: var(--third-bg-color);
-} */
 
 /* .team-list {
   display: flex;
@@ -884,9 +904,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 } */
 
-/* .team-member {
+.team-member {
   padding: 32px 16px;
-} */
+}
 
 /* .profession {
   margin-bottom: 8px;
