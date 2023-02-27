@@ -68,19 +68,11 @@ body {
 
 .container {  
   max-width: 428px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 }
-
-/* @media screen and (min-width: 480px) {
-  .container {
-    width: 426px;
-    margin-left: auto;
-    margin-right: auto;
-  }  
-} */
 
 @media screen and (min-width: 768px) {
   .container {
@@ -90,16 +82,11 @@ body {
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1158px;    
+    max-width: 1158px; 
+    padding-left: 15px;
+    padding-right: 15px;   
   }
 }
-
-  /* width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px; */
-
 
 /* ================== Components ======================= */
 
@@ -284,7 +271,6 @@ body {
   .modal-close-btn:focus .modal-close-icon {
     fill: var(--secondary-text-color-theme-dark);
   }
-
  
   .mobile-menu-link {
     display: block;
@@ -350,8 +336,6 @@ body {
     font-size: 24px;
   }
 }
-
-
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -482,11 +466,17 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--secondary-text-color-theme-dark);
-  width: 320px;
+  color: var(--secondary-text-color-theme-dark);  
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
+}
+
+@media screen and (min-width: 428px) {
+  .main-title {
+    width: 320px;
+  }
+ 
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -501,11 +491,13 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 @media screen and (min-width: 768px) {
 .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url(../images/people-office-tablet.jpg);
-  }
-  
+  padding-right: 136px;
+  padding-bottom: 108px;
+  padding-left: 136px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+    url(../images/people-office-tablet.jpg);
+  }   
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -520,6 +512,13 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 188px;
+    padding-left: 472px;
+    padding-right: 472px;
+    height: 600px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
       url(../images/people-office-desctop.jpg);
@@ -536,34 +535,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   }
 }
 
-
-/* .hero-positioning {
-  text-align: center;
-} */
-
-
-
-
-
-
-
-    /* hero {
-        padding-top: 188px;
-        padding-left: 472px;
-        padding-right: 472px;
-        height: 600px;
-        max-width: 1440px;
-        margin-left: auto;
-      margin-right: auto;
-        background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/people-office.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      } */
+  
 
 .backdrop {
   position: fixed;
@@ -758,23 +730,22 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   overflow: hidden;
 }
 
-@media screen and (max-width: 767px) {
-  .subtitle {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;   
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;           
-    color: var(--logo-text-color-theme-light);
-  }
-
-  .mobile-description:not(:last-child) {
-    margin-bottom: 72px;
-  }
+.subtitle { 
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;   
+  text-align: center;
+  text-transform: capitalize;         
 }
+
+
+.description {  
+  font-weight: 500;
+  font-size: 16px;
+}
+
+  
+
 
 /* .features-list-flex {
   display: flex;
@@ -1026,23 +997,23 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 /* CТИЛІ portfolio.html */
 
-/* .line {
+.line {
   border-bottom: 1px solid var(--decoration-color);
-} */
+}
 
-/* .projects {
+.projects {
   padding-top: 96px;
   padding-bottom: 120px;
-} */
+}
 
-/* .filter {
+.filter {
   display: flex;
   justify-content: center;
   column-gap: 24px;
   margin-bottom: 72px;
-} */
+}
 
-/* .filter-btn {
+.filter-btn {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.5;
@@ -1056,46 +1027,46 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 
-/* .filter-btn:hover,
+.filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--secondary-text-color-theme-dark);
   border-color: transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-} */
+}
 
-/* .project-list {
+.project-list {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   row-gap: 48px;
   column-gap: 24px;
-} */
+}
 
-/* .project-list-item {
+.project-list-item {
   flex-basis: calc((100% - 48px) / 3);
-} */
+}
 
-/* .project-link {
+.project-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 
-/* .project-link:hover .overlay,
+.project-link:hover .overlay,
 .project-link:focus .overlay {
   transform: translate(0, 0);
-} */
+}
 
-/* .project-link:hover,
+.project-link:hover,
 .project-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-} */
+}
 
-/* .card-content {
+.card-content {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
@@ -1103,14 +1074,14 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   border-left: 1px solid var(--decoration-color);
   border-bottom: 1px solid var(--decoration-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-} */
+}
 
-/* .overlay-wrap {
+.overlay-wrap {
   position: relative;
   overflow: hidden;
-} */
+}
 
-/* .overlay {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1127,4 +1098,4 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   padding-left: 32px;
   padding-right: 32px;
   overflow: auto;
-} */
+}
