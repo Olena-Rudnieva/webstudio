@@ -569,14 +569,13 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
-  height: 584px;
+  width: 300px;  
   background: var(--modal-background);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
 }
 
 .modal-title {
@@ -645,6 +644,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   margin-bottom: 4px;
 }
 
+.modal-form-textarea {
+  margin-bottom: 18px;
+}
+
 .modal-form-message {
   resize: none;
   width: 100%;
@@ -670,6 +673,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 .check-description {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-size: 12px;
   line-height: 1.33;
@@ -709,6 +713,22 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   align-self: center;
   padding-left: 65px;
   padding-right: 65px;
+}
+
+@media screen and (min-width: 428px) {
+  .modal {
+    width: 392px;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
 }
 
 /* ============================ /Hero ====================== */
@@ -1075,6 +1095,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
 .modal-form-subscribe {
   width: 264px;
+  height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -1143,7 +1164,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     }
 
   .page-footer-position {
-      padding-left: 0;
+      padding-left: 15px;
     }  
 
   .tex-position {
