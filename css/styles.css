@@ -74,16 +74,6 @@ body {
   margin-right: auto;
 }
 
-/* У лектора: */
-
-/* @media screen and (min-width: 480px) {
-  .container {
-    max-width: 428px;
-  }  
-}
- */
-
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;    
@@ -1126,9 +1116,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .page-footer-position {
       display: flex;
       flex-wrap: wrap;
-      align-items: baseline;
-      margin-left: 108px;  
-      text-align: start;  
+      align-items: baseline;       
+      text-align: start; 
+      padding-left: 108px; 
     }
 
   .tex-position {
@@ -1143,70 +1133,31 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .modal-form-subscribe {
     margin-bottom: 0;
   }
-
-
-
 }
 
+@media screen and (min-width: 1200px) {
+  .page-footer {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      
+    }
 
-/* .size {
-    display: inline-block;
-    margin-bottom: 16px;
+  .page-footer-position {
+      padding-left: 0;
+    }  
+
+  .tex-position {
     margin-right: 0;
-  } */
+  }
+    
+  .social-media-part {
+    margin-left: 120px;
+  }
 
-
-/* .page-footer-position {
-    display: flex;
-    align-items: baseline;
-  } */
-
-/* .social-media-part {
-  margin-left: 120px;
-} */
-
-
-
-
-
-
-
-
-
-/* .subscribe {
-  margin-left: 80px;
-} */
-
-
-
-
-
-/* .modal-form-subscribe {
-  width: 264px;  
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: transparent;
-  padding: 8px 16px;
-  font-size: 12px;
-  line-height: 2;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.04em;
-  color: var(--secondary-text-color-theme-dark);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
-
-
-/* .subscribe-btn {
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 24px;
-  gap: 16px;
-} */
+  .subscribe {
+    margin-left: 78px;
+  }
+}
 
 /* =========================== /Footer ===================== */
 
