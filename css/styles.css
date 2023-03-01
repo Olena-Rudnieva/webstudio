@@ -1087,13 +1087,20 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   margin-bottom: 16px;  
 }
 
+.tex-position {
+  margin-bottom: 72px;
+}
+
 .dark {
   text-align: start;
-  color: var(--primary-text-color-theme-dark);
-  margin-bottom: 72px;
+  color: var(--primary-text-color-theme-dark);  
   margin-left: auto;
   margin-right: auto;
   width: 268px;
+}
+
+.social-media-part {
+  margin-bottom: 72px;
 }
 
 .social-media {
@@ -1107,8 +1114,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .footer-list {
-  gap: 16px;
-  margin-bottom: 72px;
+  gap: 16px;  
 }
 
 .footer-link {
@@ -1183,6 +1189,10 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .tex-position {
     margin-right: 24px;
   } 
+
+  .social-media-part {
+    margin-bottom: 0;
+  }
   
   .subscribe-form {
     display: flex;
@@ -1207,6 +1217,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
   .tex-position {
     margin-right: 0;
+    margin-bottom: 0;
   }
     
   .social-media-part {
