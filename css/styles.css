@@ -432,12 +432,16 @@ body {
   display: flex;
   }
 
+  
+
   .contact-list-item:not(:first-child) {
     margin-left: 40px;
   }
 
   .contact-list-link {
+    font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
   }  
 
   .current::after {
@@ -451,10 +455,7 @@ body {
 /* ============================= Hero ===================== */
 
 .hero {
-  padding-top: 112px;
-  padding-left: 54px;
-  padding-bottom: 112px;
-  padding-right: 54px;
+  padding: 112px 54px;
   text-align: center;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
@@ -506,7 +507,14 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)),
     url(../images/people-office-tablet.jpg);
-  }   
+  }  
+  
+.main-title {
+  font-size: 56px;
+  line-height: 1.07; 
+  margin-bottom: 40px;
+  width: 496px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
