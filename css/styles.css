@@ -1334,15 +1334,44 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 @media screen and (min-width: 768px) {
+
   .projects {
       padding-top: 64px;
       padding-bottom: 96px;
-    }  
+    }
+
+  .filter {
+    column-gap: 24px;
+    margin-bottom: 64px;
+  }
+
+  .filter-btn {
+    padding: 12px 24px;
+  }
+  
+    .project-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .project-list-item {
+    margin-bottom: 0;
+  }
 
   .project-img {
     width: 356px;
     height: 300px;
+    
   }
+}
+
+.card-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2; 
 }
 
 @media screen and (min-width: 1200px) {
