@@ -1047,7 +1047,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .customers-list-link:hover,
-.customers-list-icon:focus {
+.customers-list-link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
