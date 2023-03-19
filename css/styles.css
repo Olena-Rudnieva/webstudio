@@ -579,7 +579,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.2);
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .modal {
